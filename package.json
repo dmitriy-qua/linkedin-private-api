@@ -30,9 +30,9 @@
     "typecheck": "eslint --ext .ts --ext .js src",
     "build": "rimraf dist && tsc -p tsconfig.build.json",
     "test": "NODE_ENV=test jest",
-    "test:coverage": "yarn test -- --coverage",
-    "prepublish": "yarn docs && yarn build",
-    "prepare": "yarn docs && yarn build",
+    "test:coverage": "npm run test -- --coverage",
+    "prepublish": "npm run docs && npm run build",
+    "prepare": "npm run docs && npm run build",
     "docs": "rimraf docs && typedoc --plugin typedoc-plugin-markdown --out docs src"
   },
   "husky": {
