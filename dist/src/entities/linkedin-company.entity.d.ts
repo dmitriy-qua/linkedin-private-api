@@ -1,5 +1,6 @@
 import { LinkedInVectorImage } from './linkedin-vector-image.entity';
-export declare const COMPANY_TYPE = "com.linkedin.voyager.dash.organization.Company";
+export declare const COMPANY_TYPE = "com.linkedin.voyager.dash.identity.profile.Position";
+export declare const INDUSTRY_TYPE = "com.linkedin.voyager.dash.common.Industry";
 export interface LinkedInCompany {
     $type: typeof COMPANY_TYPE;
     $anti_abuse_annotations: {
@@ -16,4 +17,12 @@ export interface LinkedInCompany {
     name: string;
     universalName: string;
     url: string;
+    dateRange: {
+        start: string;
+        end: string;
+    };
+}
+export interface LinkedInIndustry {
+    $type: typeof INDUSTRY_TYPE;
+    name: string;
 }

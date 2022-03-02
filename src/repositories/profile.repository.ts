@@ -1,9 +1,9 @@
 import { filter, get, keyBy, map } from 'lodash';
 
 import { Client } from '../core/client';
-import { COMPANY_TYPE, LinkedInCompany } from '../entities/linkedin-company.entity';
+import {INDUSTRY_TYPE, COMPANY_TYPE, LinkedInCompany, LinkedInIndustry} from '../entities/linkedin-company.entity';
 import { LinkedInMiniProfile, MINI_PROFILE_TYPE } from '../entities/linkedin-mini-profile.entity';
-import { LinkedInProfile, PROFILE_TYPE } from '../entities/linkedin-profile.entity';
+import {LinkedInProfile, PROFILE_TYPE} from '../entities/linkedin-profile.entity';
 import { LinkedInVectorImage } from '../entities/linkedin-vector-image.entity';
 import { MiniProfile, ProfileId } from '../entities/mini-profile.entity';
 import { Profile } from '../entities/profile.entity';
@@ -39,13 +39,15 @@ export class ProfileRepository {
 
     const results = response.included || [];
     console.log(results)
+    const industries = results.filter(r => r.$type === INDUSTRY_TYPE) as LinkedInIndustry[];
     const profile = results.find(r => r.$type === PROFILE_TYPE && r.publicIdentifier === publicIdentifier) as LinkedInProfile;
-    const company = results.find(r => r.$type === COMPANY_TYPE && profile.headline.includes(r.name)) as LinkedInCompany;
+    const company = results.find(r => r.$type === COMPANY_TYPE && (profile.headline.includes(r.name) || !r.dateRange.end)) as LinkedInCompany;
     const pictureUrls = getProfilePictureUrls(get(profile, 'profilePicture.displayImageReference.vectorImage', {}));
 
     return {
       ...profile,
       company,
+      industries,
       pictureUrls,
     };
   }
