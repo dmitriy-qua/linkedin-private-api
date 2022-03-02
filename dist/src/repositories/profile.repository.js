@@ -5,6 +5,9 @@ const lodash_1 = require("lodash");
 const linkedin_company_entity_1 = require("../entities/linkedin-company.entity");
 const linkedin_mini_profile_entity_1 = require("../entities/linkedin-mini-profile.entity");
 const linkedin_profile_entity_1 = require("../entities/linkedin-profile.entity");
+const checkHeadline = (headline = "", name = "") => {
+    return headline.toLowerCase().includes(name.toLowerCase());
+};
 const getProfilePictureUrls = (picture) => lodash_1.map(picture === null || picture === void 0 ? void 0 : picture.artifacts, artifact => `${picture === null || picture === void 0 ? void 0 : picture.rootUrl}${artifact.fileIdentifyingUrlPathSegment}`);
 const transformMiniProfile = (miniProfile) => ({
     ...miniProfile,
@@ -26,12 +29,12 @@ class ProfileRepository {
         const results = response.included || [];
         const industries = results.filter(r => r.$type === linkedin_company_entity_1.INDUSTRY_TYPE);
         const profile = results.find(r => r.$type === linkedin_profile_entity_1.PROFILE_TYPE && r.publicIdentifier === publicIdentifier);
-        const position = results.find(r => r.$type === linkedin_company_entity_1.POSITION_TYPE && (profile.headline.toLowerCase().includes(r.name.toLowerCase()) || (!!r.dateRange && !r.dateRange.end)));
+        const position = results.find(r => r.$type === linkedin_company_entity_1.POSITION_TYPE && (checkHeadline(profile.headline, r.name) || (!!r.dateRange && !r.dateRange.end)));
         let company;
         if (position)
             company = results.find(r => r.$type === linkedin_company_entity_1.COMPANY_TYPE && (r.entityUrn === position.companyUrn));
         else
-            company = results.find(r => r.$type === linkedin_company_entity_1.COMPANY_TYPE && profile.headline.toLowerCase().includes(r.name.toLowerCase()));
+            company = results.find(r => r.$type === linkedin_company_entity_1.COMPANY_TYPE && checkHeadline(profile.headline, r.name));
         const pictureUrls = getProfilePictureUrls(lodash_1.get(profile, 'profilePicture.displayImageReference.vectorImage', {}));
         return {
             ...profile,
