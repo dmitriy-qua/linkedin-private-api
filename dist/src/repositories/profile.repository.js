@@ -24,6 +24,7 @@ class ProfileRepository {
     async getProfile({ publicIdentifier }) {
         const response = await this.client.request.profile.getProfile({ publicIdentifier });
         const results = response.included || [];
+        console.log(results);
         const profile = results.find(r => r.$type === linkedin_profile_entity_1.PROFILE_TYPE && r.publicIdentifier === publicIdentifier);
         const company = results.find(r => r.$type === linkedin_company_entity_1.COMPANY_TYPE && profile.headline.includes(r.name));
         const pictureUrls = getProfilePictureUrls(lodash_1.get(profile, 'profilePicture.displayImageReference.vectorImage', {}));
