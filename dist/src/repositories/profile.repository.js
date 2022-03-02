@@ -27,7 +27,8 @@ class ProfileRepository {
         console.log(results);
         const industries = results.filter(r => r.$type === linkedin_company_entity_1.INDUSTRY_TYPE);
         const profile = results.find(r => r.$type === linkedin_profile_entity_1.PROFILE_TYPE && r.publicIdentifier === publicIdentifier);
-        const company = results.find(r => r.$type === linkedin_company_entity_1.COMPANY_TYPE && (profile.headline.includes(r.name) || (!!r.dateRange && !r.dateRange.end)));
+        const position = results.find(r => r.$type === linkedin_company_entity_1.POSITION_TYPE && (profile.headline.includes(r.name) || (!!r.dateRange && !r.dateRange.end)));
+        const company = results.find(r => r.$type === linkedin_company_entity_1.COMPANY_TYPE && r.entityUrn === position.companyUrn);
         const pictureUrls = getProfilePictureUrls(lodash_1.get(profile, 'profilePicture.displayImageReference.vectorImage', {}));
         return {
             ...profile,

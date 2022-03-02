@@ -1,1 +1,1 @@
-{"version":3,"file":"linkedin-company.entity.js","sourceRoot":"","sources":["../../../src/entities/linkedin-company.entity.ts"],"names":[],"mappings":";;;AAEa,QAAA,YAAY,GAAG,qDAAqD,CAAC;AACrE,QAAA,aAAa,GAAG,2CAA2C,CAAC"}
+{"version":3,"file":"linkedin-company.entity.js","sourceRoot":"","sources":["../../../src/entities/linkedin-company.entity.ts"],"names":[],"mappings":";;;AAEa,QAAA,aAAa,GAAG,qDAAqD,CAAC;AACtE,QAAA,YAAY,GAAG,gDAAgD,CAAC;AAChE,QAAA,aAAa,GAAG,2CAA2C,CAAC"}
