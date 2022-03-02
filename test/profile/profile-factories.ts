@@ -25,18 +25,14 @@ const createVectorImage = (count: number): LinkedInVectorImage[] =>
 
 const createCompany = (count: number): LinkedInCompany[] =>
     times(count, () => ({
-        $type: 'com.linkedin.voyager.dash.identity.profile.Position',
+        $type: 'com.linkedin.voyager.dash.organization.Company',
         $anti_abuse_annotations: [{attributeId: faker.datatype.number(), entityId: faker.datatype.number()}],
         $recipeTypes: [faker.random.word()],
         entityUrn: faker.datatype.uuid(),
         industry: {[faker.datatype.uuid()]: faker.random.word()},
         industryUrns: [faker.datatype.uuid()],
         logo: {
-            vetorImage: createVectorImage(1)[0],
-        },
-        dateRange: {
-            start: "",
-            end: ""
+            vectorImage: createVectorImage(1)[0],
         },
         name: faker.name.firstName(),
         universalName: faker.name.firstName(),

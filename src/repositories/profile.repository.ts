@@ -1,12 +1,19 @@
-import { filter, get, keyBy, map } from 'lodash';
+import {filter, get, keyBy, map} from 'lodash';
 
-import { Client } from '../core/client';
-import {INDUSTRY_TYPE, COMPANY_TYPE, LinkedInCompany, LinkedInIndustry} from '../entities/linkedin-company.entity';
-import { LinkedInMiniProfile, MINI_PROFILE_TYPE } from '../entities/linkedin-mini-profile.entity';
+import {Client} from '../core/client';
+import {
+  COMPANY_TYPE,
+  INDUSTRY_TYPE,
+  LinkedInCompany,
+  LinkedInIndustry,
+  LinkedInPosition,
+  POSITION_TYPE
+} from '../entities/linkedin-company.entity';
+import {LinkedInMiniProfile, MINI_PROFILE_TYPE} from '../entities/linkedin-mini-profile.entity';
 import {LinkedInProfile, PROFILE_TYPE} from '../entities/linkedin-profile.entity';
-import { LinkedInVectorImage } from '../entities/linkedin-vector-image.entity';
-import { MiniProfile, ProfileId } from '../entities/mini-profile.entity';
-import { Profile } from '../entities/profile.entity';
+import {LinkedInVectorImage} from '../entities/linkedin-vector-image.entity';
+import {MiniProfile, ProfileId} from '../entities/mini-profile.entity';
+import {Profile} from '../entities/profile.entity';
 
 const getProfilePictureUrls = (picture?: LinkedInVectorImage): string[] =>
   map(picture?.artifacts, artifact => `${picture?.rootUrl}${artifact.fileIdentifyingUrlPathSegment}`);
@@ -41,7 +48,8 @@ export class ProfileRepository {
     console.log(results)
     const industries = results.filter(r => r.$type === INDUSTRY_TYPE) as LinkedInIndustry[];
     const profile = results.find(r => r.$type === PROFILE_TYPE && r.publicIdentifier === publicIdentifier) as LinkedInProfile;
-    const company = results.find(r => r.$type === COMPANY_TYPE && (profile.headline.includes(r.name) || (!!r.dateRange && !r.dateRange.end))) as LinkedInCompany;
+    const position = results.find(r => r.$type === POSITION_TYPE && (profile.headline.includes(r.name) || (!!r.dateRange && !r.dateRange.end))) as LinkedInPosition;
+    const company = results.find(r => r.$type === COMPANY_TYPE && r.entityUrn === position.companyUrn) as LinkedInCompany;
     const pictureUrls = getProfilePictureUrls(get(profile, 'profilePicture.displayImageReference.vectorImage', {}));
 
     return {
