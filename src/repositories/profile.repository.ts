@@ -38,10 +38,10 @@ export class ProfileRepository {
     const response = await this.client.request.profile.getProfile({ publicIdentifier });
 
     const results = response.included || [];
-    console.log(results)
+
     const industries = results.filter(r => r.$type === INDUSTRY_TYPE) as LinkedInIndustry[];
     const profile = results.find(r => r.$type === PROFILE_TYPE && r.publicIdentifier === publicIdentifier) as LinkedInProfile;
-    const company = results.find(r => r.$type === COMPANY_TYPE && (profile.headline.includes(r.name) || !r.dateRange.end)) as LinkedInCompany;
+    const company = results.find(r => r.$type === COMPANY_TYPE && (profile.headline.includes(r.name) || (!!r.dateRange && !r.dateRange.end))) as LinkedInCompany;
     const pictureUrls = getProfilePictureUrls(get(profile, 'profilePicture.displayImageReference.vectorImage', {}));
 
     return {
