@@ -15,7 +15,7 @@ import {LinkedInVectorImage} from '../entities/linkedin-vector-image.entity';
 import {MiniProfile, ProfileId} from '../entities/mini-profile.entity';
 import {Profile} from '../entities/profile.entity';
 
-const checkHeadline = (headline = "", name = ""): boolean => {
+const checkHeadline = (headline = ".", name = ","): boolean => {
   return headline.toLowerCase().includes(name.toLowerCase())
 }
 
