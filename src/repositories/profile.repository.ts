@@ -45,14 +45,13 @@ export class ProfileRepository {
     const response = await this.client.request.profile.getProfile({ publicIdentifier });
 
     const results = response.included || [];
-    console.log(results)
     const industries = results.filter(r => r.$type === INDUSTRY_TYPE) as LinkedInIndustry[];
     const profile = results.find(r => r.$type === PROFILE_TYPE && r.publicIdentifier === publicIdentifier) as LinkedInProfile;
-    const position = results.find(r => r.$type === POSITION_TYPE && (profile.headline.includes(r.name) || (!!r.dateRange && !r.dateRange.end))) as LinkedInPosition;
+    const position = results.find(r => r.$type === POSITION_TYPE && (profile.headline.toLowerCase().includes(r.name.toLowerCase()) || (!!r.dateRange && !r.dateRange.end))) as LinkedInPosition;
 
     let company
     if (position) company = results.find(r => r.$type === COMPANY_TYPE && (r.entityUrn === position.companyUrn)) as LinkedInCompany;
-    else company = results.find(r => r.$type === COMPANY_TYPE && profile.headline.includes(r.name)) as LinkedInCompany;
+    else company = results.find(r => r.$type === COMPANY_TYPE && profile.headline.toLowerCase().includes(r.name.toLowerCase())) as LinkedInCompany;
 
     const pictureUrls = getProfilePictureUrls(get(profile, 'profilePicture.displayImageReference.vectorImage', {}));
 

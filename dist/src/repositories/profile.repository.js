@@ -24,15 +24,14 @@ class ProfileRepository {
     async getProfile({ publicIdentifier }) {
         const response = await this.client.request.profile.getProfile({ publicIdentifier });
         const results = response.included || [];
-        console.log(results);
         const industries = results.filter(r => r.$type === linkedin_company_entity_1.INDUSTRY_TYPE);
         const profile = results.find(r => r.$type === linkedin_profile_entity_1.PROFILE_TYPE && r.publicIdentifier === publicIdentifier);
-        const position = results.find(r => r.$type === linkedin_company_entity_1.POSITION_TYPE && (profile.headline.includes(r.name) || (!!r.dateRange && !r.dateRange.end)));
+        const position = results.find(r => r.$type === linkedin_company_entity_1.POSITION_TYPE && (profile.headline.toLowerCase().includes(r.name.toLowerCase()) || (!!r.dateRange && !r.dateRange.end)));
         let company;
         if (position)
             company = results.find(r => r.$type === linkedin_company_entity_1.COMPANY_TYPE && (r.entityUrn === position.companyUrn));
         else
-            company = results.find(r => r.$type === linkedin_company_entity_1.COMPANY_TYPE && profile.headline.includes(r.name));
+            company = results.find(r => r.$type === linkedin_company_entity_1.COMPANY_TYPE && profile.headline.toLowerCase().includes(r.name.toLowerCase()));
         const pictureUrls = getProfilePictureUrls(lodash_1.get(profile, 'profilePicture.displayImageReference.vectorImage', {}));
         return {
             ...profile,
