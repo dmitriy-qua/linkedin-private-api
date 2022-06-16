@@ -17,7 +17,12 @@ export declare const requestHeaders: {
     'x-restli-protocol-version': string;
     'x-li-lang': string;
     'user-agent': string;
+    'x-li-page-instance': string;
+    accept: string;
+    'x-li-track': string;
     'sec-fetch-site': string;
     'sec-fetch-mode': string;
+    referer: string;
+    'accept-encoding': string;
     'accept-language': string;
 };

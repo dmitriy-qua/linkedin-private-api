@@ -21,12 +21,12 @@ export const requestHeaders = {
   'x-li-lang': 'en_US',
   'user-agent':
     'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36',
-  // 'x-li-page-instance': 'urn:li:page:d_flagship3_feed;N2rwHUFIQrykkt4exT64CQ==',
-  // accept: 'application/vnd.linkedin.normalized+json+2.1',
-  // 'x-li-track': '{"clientVersion":"1.5.*","osName":"web","timezoneOffset":2,"deviceFormFactor":"DESKTOP","mpName":"voyager-web"}',
+  'x-li-page-instance': 'urn:li:page:d_flagship3_feed;N2rwHUFIQrykkt4exT64CQ==',
+  accept: 'application/vnd.linkedin.normalized+json+2.1',
+  'x-li-track': '{"clientVersion":"1.5.*","osName":"web","timezoneOffset":2,"deviceFormFactor":"DESKTOP","mpName":"voyager-web"}',
   'sec-fetch-site': 'same-origin',
   'sec-fetch-mode': 'cors',
-  // referer: 'https://www.linkedin.com/feed/?trk=guest_homepage-basic_nav-header-signin',
-  // 'accept-encoding': 'gzip, deflate, br',
+  referer: 'https://www.linkedin.com/feed/?trk=guest_homepage-basic_nav-header-signin',
+  'accept-encoding': 'gzip, deflate, br',
   'accept-language': 'en-US,en;q=0.9',
 };
