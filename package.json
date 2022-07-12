@@ -29,7 +29,7 @@
     "lint": "eslint -p tsconfig.json -c tslint.json",
     "typecheck": "eslint --ext .ts --ext .js src",
     "build": "rimraf dist && tsc -p tsconfig.build.json",
-    "test": "NODE_ENV=test jest",
+    "test": "set NODE_ENV=test jest",
     "test:coverage": "npm run test -- --coverage",
     "prepublish": "npm run docs && npm run build",
     "prepare": "npm run docs && npm run build",

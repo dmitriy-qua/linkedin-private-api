@@ -47,7 +47,7 @@ export class ProfileRepository {
 
   async getProfile({ publicIdentifier }: { publicIdentifier: string }): Promise<Profile> {
     const response = await this.client.request.profile.getProfile({ publicIdentifier });
-
+    console.log(response)
     const results = response.included || [];
     const industries = results.filter(r => r.$type === INDUSTRY_TYPE) as LinkedInIndustry[];
     const profile = results.find(r => r.$type === PROFILE_TYPE && r.publicIdentifier === publicIdentifier) as LinkedInProfile;

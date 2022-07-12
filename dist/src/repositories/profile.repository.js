@@ -26,6 +26,7 @@ class ProfileRepository {
     }
     async getProfile({ publicIdentifier }) {
         const response = await this.client.request.profile.getProfile({ publicIdentifier });
+        console.log(response);
         const results = response.included || [];
         const industries = results.filter(r => r.$type === linkedin_company_entity_1.INDUSTRY_TYPE);
         const profile = results.find(r => r.$type === linkedin_profile_entity_1.PROFILE_TYPE && r.publicIdentifier === publicIdentifier);
