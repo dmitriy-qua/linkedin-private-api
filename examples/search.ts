@@ -1,11 +1,18 @@
+import dotenv from 'dotenv';
+dotenv.config();
+
 import { Client } from '../src';
 
-const username = process.env.USERNAME as string;
-const password = process.env.PASSWORD as string;
+const username = process.env.ACC_USERNAME as string;
+const password = process.env.ACC_PASSWORD as string;
 
 (async () => {
-  const client = new Client();
-  await client.login.userPass({ username, password });
+  let client = new Client();
+  client = await client.login.userPass({
+    username,
+    password,
+    useCache: true
+  });
 
   // Search for React development jobs in Israel
   const jobsScroller = await client.search.searchJobs({
@@ -28,7 +35,7 @@ const password = process.env.PASSWORD as string;
   });
   const [{ profile: billGates }] = await peopleScroller.scrollNext();
 
-  const ownConnectionsScroller = await client.search.searchOwnConnections();
+  const ownConnectionsScroller = await client.search.searchOwnConnections({keywords: "Bill Gates"});
   const connections = await ownConnectionsScroller.scrollNext();
 
   const profileConnectionsScroller = await client.search.searchConnectionsOf({ profileId: connections[0].profile.profileId });

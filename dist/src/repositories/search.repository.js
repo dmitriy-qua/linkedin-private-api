@@ -12,6 +12,7 @@ const search_type_enum_1 = require("../types/search-type.enum");
 const profile_repository_1 = require("./profile.repository");
 const linkedin_job_posting_1 = require("../entities/linkedin-job-posting");
 const linkedin_base_company_1 = require("../entities/linkedin-base-company");
+const entities_1 = require("../entities");
 class SearchRepository {
     constructor({ client }) {
         this.client = client;
@@ -33,13 +34,12 @@ class SearchRepository {
             fetchCompanies: this.fetchCompanies.bind(this),
         });
     }
-    searchOwnConnections({ skip = 0, limit = 10, filters = {}, keywords, } = {}) {
+    searchOwnConnections({ skip = 0, limit = 10, keywords, }) {
         return new people_search_scroller_1.PeopleSearchScroller({
             skip,
             limit,
             keywords,
-            filters: { ...filters, network: network_enum_1.LinkedInNetworkType.F },
-            fetchPeople: this.fetchPeople.bind(this),
+            fetchPeople: this.fetchConnections.bind(this),
         });
     }
     searchConnectionsOf({ profileId, skip = 0, limit = 10, filters = {}, keywords, }) {
@@ -72,6 +72,20 @@ class SearchRepository {
         return searchHits.map(searchHit => ({
             ...searchHit,
             profile: profiles[searchHit.targetUrn],
+        }));
+    }
+    async fetchConnections({ skip = 0, limit = 10, keywords, } = {}) {
+        const response = await this.client.request.search.searchOwnConnections({
+            keywords,
+            skip,
+            limit,
+        });
+        const searchHits = lodash_1.flatten(response.included.filter(e => e.$type === entities_1.MICRO_PROFILE_TYPE).map(e => e));
+        return searchHits.map(searchHit => ({
+            profile: {
+                ...searchHit,
+                profileId: (searchHit.entityUrn || '').replace('urn:li:fsd_profile:', '')
+            },
         }));
     }
     async fetchCompanies({ skip = 0, limit = 10, keywords, }) {

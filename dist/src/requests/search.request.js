@@ -10,7 +10,7 @@ class SearchRequest {
             filters,
             count: limit,
             ...(keywords ? { keywords: encodeURIComponent(keywords) } : {}),
-            origin: 'TYPEAHEAD_ESCAPE_HATCH',
+            origin: 'GLOBAL_SEARCH_HEADER',
             q: 'all',
             queryContext: {
                 spellCorrectionEnabled: true,
@@ -18,7 +18,19 @@ class SearchRequest {
             },
             start: skip,
         };
-        return this.request.get('search/blended', {
+        return this.request.get('graphql', {
+            params: queryParams,
+        });
+    }
+    searchOwnConnections({ skip = 0, limit = 10, keywords, }) {
+        const queryParams = {
+            start: skip,
+            count: limit,
+            q: 'search',
+            ...(keywords ? { keyword: encodeURIComponent(keywords) } : {}),
+            decorationId: 'com.linkedin.voyager.dash.deco.web.mynetwork.ConnectionList-16',
+        };
+        return this.request.get('relationships/dash/connections', {
             params: queryParams,
         });
     }

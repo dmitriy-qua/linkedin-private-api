@@ -1,6 +1,7 @@
 import { LinkedInRequest } from '../core/linkedin-request';
 import { GetOwnProfileResponse } from '../responses/own-profile.response.get';
 import { GetProfileResponse } from '../responses/profile.response.get';
+import { GetBlendedSearchResponse } from "../responses";
 
 export class ProfileRequest {
   private request: LinkedInRequest;

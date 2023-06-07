@@ -15,7 +15,7 @@ export class LinkedInRequest extends Request {
 
   profile = new ProfileRequest({ request: this });
 
-  search = new SearchRequest({ request: this });
+  search = new SearchRequest({ request: this});
 
   auth = new AuthRequest({ request: this });
 }

@@ -21,11 +21,10 @@ export declare class SearchRepository {
         limit?: number;
         keywords?: string;
     }): CompanySearchScroller;
-    searchOwnConnections({ skip, limit, filters, keywords, }?: {
+    searchOwnConnections({ skip, limit, keywords, }: {
         skip?: number;
         limit?: number;
-        filters?: Omit<PeopleSearchFilters, 'network'>;
-        keywords?: string;
+        keywords: string;
     }): PeopleSearchScroller;
     searchConnectionsOf({ profileId, skip, limit, filters, keywords, }: {
         profileId: ProfileId;
@@ -41,6 +40,7 @@ export declare class SearchRepository {
         keywords?: string;
     }): JobSearchScroller;
     private fetchPeople;
+    private fetchConnections;
     private fetchCompanies;
     private fetchJobs;
 }

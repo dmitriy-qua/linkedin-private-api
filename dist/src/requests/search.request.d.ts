@@ -14,6 +14,11 @@ export declare class SearchRequest {
         filters?: BlendedSearchFilters;
         keywords?: string;
     }): Promise<GetBlendedSearchResponse>;
+    searchOwnConnections({ skip, limit, keywords, }: {
+        skip?: number;
+        limit?: number;
+        keywords?: string;
+    }): Promise<GetBlendedSearchResponse>;
     searchJobs({ skip, limit, filters, keywords, }: {
         skip?: number;
         limit?: number;

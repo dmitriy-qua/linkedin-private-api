@@ -1,3 +1,6 @@
+import dotenv from "dotenv";
+dotenv.config();
+
 import { matchers, replace, reset, verify, when } from 'testdouble';
 
 import { requestHeaders } from '../../config';

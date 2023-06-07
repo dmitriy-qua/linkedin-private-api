@@ -19,6 +19,11 @@ import { getProfilesFromResponse } from './profile.repository';
 import { JOB_POSTING_TYPE, LinkedInJobPosting } from '../entities/linkedin-job-posting';
 import { BASE_COMPANY_TYPE, LinkedInBaseCompany } from '../entities/linkedin-base-company';
 import { JobSearchHit } from '../entities/job-search-hit.entity';
+import {
+  LinkedInMicroProfile,
+  LinkedInMiniProfile,
+  MICRO_PROFILE_TYPE,
+} from "../entities";
 
 export class SearchRepository {
   client: Client;
@@ -65,23 +70,20 @@ export class SearchRepository {
   }
 
   searchOwnConnections({
-    skip = 0,
-    limit = 10,
-    filters = {},
-    keywords,
+                                skip = 0,
+                                limit = 10,
+                                keywords,
   }: {
     skip?: number;
     limit?: number;
-    filters?: Omit<PeopleSearchFilters, 'network'>;
-    keywords?: string;
-  } = {}): PeopleSearchScroller {
+    keywords: string;
+  }): PeopleSearchScroller {
     return new PeopleSearchScroller({
       skip,
       limit,
       keywords,
-      filters: { ...filters, network: LinkedInNetworkType.F },
-      fetchPeople: this.fetchPeople.bind(this),
-    });
+      fetchPeople: this.fetchConnections.bind(this),
+    })
   }
 
   searchConnectionsOf({
@@ -153,6 +155,33 @@ export class SearchRepository {
       ...searchHit,
       profile: profiles[searchHit.targetUrn],
     }));
+  }
+
+  private async fetchConnections({
+                              skip = 0,
+                              limit = 10,
+                              keywords,
+                            }: {
+    skip?: number;
+    limit?: number;
+    keywords?: string;
+  } = {}): Promise<PeopleSearchHit[]> {
+    const response = await this.client.request.search.searchOwnConnections({
+      keywords,
+      skip,
+      limit,
+    });
+
+    const searchHits = flatten(
+        response.included.filter(e => e.$type === MICRO_PROFILE_TYPE).map(e => e!),
+    ) as LinkedInMicroProfile[];
+
+    return searchHits.map(searchHit => ({
+      profile: {
+        ...searchHit,
+        profileId: (searchHit.entityUrn || '').replace('urn:li:fsd_profile:', '')
+      },
+    })) as PeopleSearchHit[];
   }
 
   private async fetchCompanies({

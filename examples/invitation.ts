@@ -1,11 +1,18 @@
+import dotenv from 'dotenv';
+dotenv.config();
+
 import { Client } from '../src';
 
-const username = process.env.USERNAME as string;
-const password = process.env.PASSWORD as string;
+const username = process.env.ACC_USERNAME as string;
+const password = process.env.ACC_PASSWORD as string;
 
 (async () => {
-  const client = new Client();
-  await client.login.userPass({ username, password });
+  let client = new Client();
+  client = await client.login.userPass({
+    username,
+    password,
+    useCache: true
+  });
 
   const receivedScroller = client.invitation.getReceivedInvitations();
   const receivedInvitations = await receivedScroller.scrollNext();

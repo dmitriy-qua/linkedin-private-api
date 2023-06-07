@@ -14,12 +14,11 @@ const transformMiniProfile = (miniProfile) => ({
     pictureUrls: getProfilePictureUrls(miniProfile.picture),
     profileId: (miniProfile.entityUrn || '').replace('urn:li:fs_miniProfile:', ''),
 });
-const getProfilesFromResponse = (response) => {
+exports.getProfilesFromResponse = (response) => {
     const miniProfiles = lodash_1.filter(response.included, p => p.$type === linkedin_mini_profile_entity_1.MINI_PROFILE_TYPE);
     const transformedMiniProfiles = miniProfiles.map((miniProfile) => transformMiniProfile(miniProfile));
     return lodash_1.keyBy(transformedMiniProfiles, 'profileId');
 };
-exports.getProfilesFromResponse = getProfilesFromResponse;
 class ProfileRepository {
     constructor({ client }) {
         this.client = client;

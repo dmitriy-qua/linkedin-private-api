@@ -3,6 +3,7 @@ import { LinkedInVectorImage } from './linkedin-vector-image.entity';
 export type MiniProfileUrn = string;
 
 export const MINI_PROFILE_TYPE = 'com.linkedin.voyager.identity.shared.MiniProfile';
+export const MICRO_PROFILE_TYPE = 'com.linkedin.voyager.dash.identity.profile.Profile';
 
 export interface LinkedInMiniProfile {
   $type: typeof MINI_PROFILE_TYPE;
@@ -16,4 +17,16 @@ export interface LinkedInMiniProfile {
   picture?: LinkedInVectorImage;
   publicIdentifier: string;
   trackingId: string;
+}
+
+export interface LinkedInMicroProfile {
+  $type: typeof MICRO_PROFILE_TYPE;
+  $recipeTypes: string[];
+  entityUrn: MiniProfileUrn;
+  firstName: string;
+  lastName: string;
+  headline: string;
+  memorailzed?: boolean;
+  profilePicture?: LinkedInVectorImage;
+  publicIdentifier: string;
 }

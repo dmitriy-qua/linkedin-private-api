@@ -26,3 +26,40 @@ export const paramsSerializer = (params: Record<string, string | Record<string, 
     encodeURIComponent: uri => uri,
   });
 };
+
+const getEncodedString = (res: string, filterVal: string, filterKey: string) => {
+  return `${res}${res ? ',' : ''}${filterKey}:${filterVal}`
+}
+
+export const graphqlParamsSerializer = (params: Record<string, string | Record<string, string>>): string => {
+  const encodedParams = mapValues(params, value => {
+
+    if (!isArray(value) && !isPlainObject(value)) {
+      return value.toString();
+    }
+
+    if (isArray(value)) {
+      return `List(${value.join(',')})`;
+    }
+
+    const encodedList = reduce(
+        value as Record<string, string>,
+        (res, filterVal: any, filterKey) => {
+          if (filterKey === "query") {
+            const str = `(${reduce(filterVal as Record<string, string>, getEncodedString, '')})`
+            return getEncodedString(res, str as string, filterKey)
+          }
+
+          return getEncodedString(res, filterVal, filterKey)
+        },
+        '',
+    );
+
+    return `(${encodedList})`;
+  });
+
+  return stringify(encodedParams, "&&", undefined, {
+    encodeURIComponent: uri => uri,
+  });
+};
+

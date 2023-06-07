@@ -1,3 +1,6 @@
+import dotenv from 'dotenv';
+dotenv.config();
+
 import { difference } from 'lodash';
 import { reset, verify, when } from 'testdouble';
 import { URL } from 'url';
@@ -27,7 +30,7 @@ describe('getProfile', () => {
     const reqParams = {
       q: 'memberIdentity',
       memberIdentity: resultProfile.publicIdentifier,
-      decorationId: 'com.linkedin.voyager.dash.deco.identity.profile.FullProfileWithEntities-35',
+      decorationId: 'com.linkedin.voyager.dash.deco.identity.profile.FullProfileWithEntities-86',
     };
 
     when(axios.get(getProfileRequestUrl, { params: reqParams })).thenResolve({ data: response });
