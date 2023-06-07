@@ -31,7 +31,7 @@ exports.graphqlParamsSerializer = (params) => {
             return `List(${value.join(',')})`;
         }
         const encodedList = lodash_1.reduce(value, (res, filterVal, filterKey) => {
-            if (filterKey === "query") {
+            if (filterKey === 'query') {
                 const str = `(${lodash_1.reduce(filterVal, getEncodedString, '')})`;
                 return getEncodedString(res, str, filterKey);
             }
@@ -39,7 +39,7 @@ exports.graphqlParamsSerializer = (params) => {
         }, '');
         return `(${encodedList})`;
     });
-    return querystring_1.stringify(encodedParams, "&&", undefined, {
+    return querystring_1.stringify(encodedParams, '&&', undefined, {
         encodeURIComponent: uri => uri,
     });
 };

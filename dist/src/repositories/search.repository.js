@@ -84,7 +84,7 @@ class SearchRepository {
         return searchHits.map(searchHit => ({
             profile: {
                 ...searchHit,
-                profileId: (searchHit.entityUrn || '').replace('urn:li:fsd_profile:', '')
+                profileId: (searchHit.entityUrn || '').replace('urn:li:fsd_profile:', ''),
             },
         }));
     }

@@ -5,7 +5,7 @@ const lodash_1 = require("lodash");
 const linkedin_company_entity_1 = require("../entities/linkedin-company.entity");
 const linkedin_mini_profile_entity_1 = require("../entities/linkedin-mini-profile.entity");
 const linkedin_profile_entity_1 = require("../entities/linkedin-profile.entity");
-const checkHeadline = (headline = ".", name = ",") => {
+const checkHeadline = (headline = '.', name = ',') => {
     return headline.toLowerCase().includes(name.toLowerCase());
 };
 const getProfilePictureUrls = (picture) => lodash_1.map(picture === null || picture === void 0 ? void 0 : picture.artifacts, artifact => `${picture === null || picture === void 0 ? void 0 : picture.rootUrl}${artifact.fileIdentifyingUrlPathSegment}`);
@@ -31,7 +31,7 @@ class ProfileRepository {
         const position = results.find(r => r.$type === linkedin_company_entity_1.POSITION_TYPE && (checkHeadline(profile.headline, r.name) || (!!r.dateRange && !r.dateRange.end)));
         let company;
         if (position)
-            company = results.find(r => r.$type === linkedin_company_entity_1.COMPANY_TYPE && (r.entityUrn === position.companyUrn));
+            company = results.find(r => r.$type === linkedin_company_entity_1.COMPANY_TYPE && r.entityUrn === position.companyUrn);
         else
             company = results.find(r => r.$type === linkedin_company_entity_1.COMPANY_TYPE && checkHeadline(profile.headline, r.name));
         const pictureUrls = getProfilePictureUrls(lodash_1.get(profile, 'profilePicture.displayImageReference.vectorImage', {}));
