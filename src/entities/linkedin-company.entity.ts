@@ -20,7 +20,7 @@ export interface LinkedInPosition {
   dateRange: {
     start: string;
     end: string;
-  }
+  };
 }
 
 export interface LinkedInCompany {
@@ -45,4 +45,3 @@ export interface LinkedInIndustry {
   $type: typeof INDUSTRY_TYPE;
   name: string;
 }
-

@@ -23,8 +23,8 @@ export abstract class CreatedBeforeScroller<T> {
     }
 
     if (!isEmpty(results)) {
-      this.prevCreatedBefore = this.createdBefore || ((results[0][this.fieldName] as unknown) as number) + 1000;
-      this.createdBefore = (results[results.length - 1][this.fieldName] as unknown) as number;
+      this.prevCreatedBefore = this.createdBefore || (results[0][this.fieldName] as unknown as number) + 1000;
+      this.createdBefore = results[results.length - 1][this.fieldName] as unknown as number;
     }
 
     return results;

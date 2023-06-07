@@ -1,4 +1,4 @@
-import {LinkedInCompany, LinkedInIndustry, LinkedInPosition} from './linkedin-company.entity';
+import { LinkedInCompany, LinkedInIndustry, LinkedInPosition } from './linkedin-company.entity';
 import { LinkedInProfile } from './linkedin-profile.entity';
 
 export interface Profile extends LinkedInProfile {

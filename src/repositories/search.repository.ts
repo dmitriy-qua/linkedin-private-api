@@ -19,11 +19,7 @@ import { getProfilesFromResponse } from './profile.repository';
 import { JOB_POSTING_TYPE, LinkedInJobPosting } from '../entities/linkedin-job-posting';
 import { BASE_COMPANY_TYPE, LinkedInBaseCompany } from '../entities/linkedin-base-company';
 import { JobSearchHit } from '../entities/job-search-hit.entity';
-import {
-  LinkedInMicroProfile,
-  LinkedInMiniProfile,
-  MICRO_PROFILE_TYPE,
-} from "../entities";
+import { LinkedInMicroProfile, MICRO_PROFILE_TYPE } from '../entities';
 
 export class SearchRepository {
   client: Client;
@@ -70,9 +66,9 @@ export class SearchRepository {
   }
 
   searchOwnConnections({
-                                skip = 0,
-                                limit = 10,
-                                keywords,
+    skip = 0,
+    limit = 10,
+    keywords,
   }: {
     skip?: number;
     limit?: number;
@@ -83,7 +79,7 @@ export class SearchRepository {
       limit,
       keywords,
       fetchPeople: this.fetchConnections.bind(this),
-    })
+    });
   }
 
   searchConnectionsOf({
@@ -158,10 +154,10 @@ export class SearchRepository {
   }
 
   private async fetchConnections({
-                              skip = 0,
-                              limit = 10,
-                              keywords,
-                            }: {
+    skip = 0,
+    limit = 10,
+    keywords,
+  }: {
     skip?: number;
     limit?: number;
     keywords?: string;
@@ -173,13 +169,13 @@ export class SearchRepository {
     });
 
     const searchHits = flatten(
-        response.included.filter(e => e.$type === MICRO_PROFILE_TYPE).map(e => e!),
+      response.included.filter(e => e.$type === MICRO_PROFILE_TYPE).map(e => e!),
     ) as LinkedInMicroProfile[];
 
     return searchHits.map(searchHit => ({
       profile: {
         ...searchHit,
-        profileId: (searchHit.entityUrn || '').replace('urn:li:fsd_profile:', '')
+        profileId: (searchHit.entityUrn || '').replace('urn:li:fsd_profile:', ''),
       },
     })) as PeopleSearchHit[];
   }

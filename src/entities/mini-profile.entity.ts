@@ -1,4 +1,4 @@
-import {LinkedInMicroProfile, LinkedInMiniProfile} from './linkedin-mini-profile.entity';
+import { LinkedInMicroProfile, LinkedInMiniProfile } from './linkedin-mini-profile.entity';
 
 export type ProfileId = string;
 

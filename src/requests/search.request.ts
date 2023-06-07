@@ -3,7 +3,6 @@ import { JobSearchFilters } from '../types/job-search-filters';
 import { LinkedInRequest } from '../core/linkedin-request';
 import { GetBlendedSearchResponse } from '../responses/blended-search.reponse.get';
 import { BlendedSearchFilters } from '../types/blended-search-filters';
-import { graphqlParamsSerializer } from "../utils";
 
 export class SearchRequest {
   private request: LinkedInRequest;
@@ -58,13 +57,13 @@ export class SearchRequest {
   }
 
   searchOwnConnections({
-                          skip = 0,
-                          limit = 10,
-                          keywords,
+    skip = 0,
+    limit = 10,
+    keywords,
   }: {
     skip?: number;
     limit?: number;
-    keywords?: string
+    keywords?: string;
   }): Promise<GetBlendedSearchResponse> {
     const queryParams = {
       start: skip,
