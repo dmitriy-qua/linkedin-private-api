@@ -56,16 +56,8 @@ export class InvitationRepository {
     });
   }
 
-  async sendInvitation({
-    profileId,
-    trackingId,
-    message,
-  }: {
-    profileId: string;
-    trackingId: string;
-    message?: string;
-  }): Promise<Invitation> {
-    await this.client.request.invitation.sendInvitation({ profileId, trackingId, message });
+  async sendInvitation({ profileId, message }: { profileId: string; message?: string }): Promise<Invitation> {
+    await this.client.request.invitation.sendInvitation({ profileId, message });
 
     const lastInvitation = (await this.fetchSent({ skip: 0, limit: 1 }))[0];
 

@@ -22,6 +22,19 @@ export class Request {
       withCredentials: true,
       ...(proxy && { proxy }),
     });
+
+    // this.request.interceptors.request.use(request => {
+    //   console.log('Starting Request', request)
+    //   return request
+    // })
+    //
+    // this.request.interceptors.response.use(response => {
+    //   console.log('Response:', response)
+    //   return response
+    // }, error => {
+    //   console.log('Response error:', error.response)
+    //   return error;
+    // })
   }
 
   setHeaders(headers: Record<string, string>): void {
