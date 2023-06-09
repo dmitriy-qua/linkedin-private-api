@@ -14,9 +14,8 @@ export declare class InvitationRepository {
         skip?: number | undefined;
         limit?: number | undefined;
     }): InvitationScroller;
-    sendInvitation({ profileId, trackingId, message, }: {
+    sendInvitation({ profileId, message }: {
         profileId: string;
-        trackingId: string;
         message?: string;
     }): Promise<Invitation>;
     private fetchReceived;

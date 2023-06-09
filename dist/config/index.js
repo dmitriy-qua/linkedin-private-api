@@ -22,7 +22,7 @@ exports.requestHeaders = {
     'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36',
     'x-li-page-instance': 'urn:li:page:d_flagship3_feed;N2rwHUFIQrykkt4exT64CQ==',
     accept: 'application/vnd.linkedin.normalized+json+2.1',
-    'x-li-track': '{"clientVersion":"1.5.*","osName":"web","timezoneOffset":2,"deviceFormFactor":"DESKTOP","mpName":"voyager-web"}',
+    'x-li-track': '{"clientVersion":"1.12.7270","mpVersion":"1.12.7270","osName":"web","timezoneOffset":3,"timezone":"Europe/Kiev","deviceFormFactor":"DESKTOP","mpName":"voyager-web","displayDensity":1,"displayWidth":1920,"displayHeight":1080}',
     'sec-fetch-site': 'same-origin',
     'sec-fetch-mode': 'cors',
     referer: 'https://www.linkedin.com/feed/?trk=guest_homepage-basic_nav-header-signin',

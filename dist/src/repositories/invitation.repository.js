@@ -36,8 +36,8 @@ class InvitationRepository {
             fetchInvitations: this.fetchReceived.bind(this),
         });
     }
-    async sendInvitation({ profileId, trackingId, message, }) {
-        await this.client.request.invitation.sendInvitation({ profileId, trackingId, message });
+    async sendInvitation({ profileId, message }) {
+        await this.client.request.invitation.sendInvitation({ profileId, message });
         const lastInvitation = (await this.fetchSent({ skip: 0, limit: 1 }))[0];
         return lastInvitation;
     }

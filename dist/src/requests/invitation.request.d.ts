@@ -6,9 +6,8 @@ export declare class InvitationRequest {
     constructor({ request }: {
         request: LinkedInRequest;
     });
-    sendInvitation({ profileId, trackingId, message }: {
+    sendInvitation({ profileId, message }: {
         profileId: string;
-        trackingId: string;
         message?: string;
     }): Promise<void>;
     getReceivedInvitations({ skip, limit }?: {

@@ -5,18 +5,20 @@ class InvitationRequest {
     constructor({ request }) {
         this.request = request;
     }
-    sendInvitation({ profileId, trackingId, message }) {
-        const requestPayload = {
-            trackingId,
-            emberEntityName: 'growth/invitation/norm-invitation',
-            invitee: {
-                'com.linkedin.voyager.growth.invitation.InviteeProfile': {
-                    profileId,
-                },
-            },
-            ...(message && { message }),
+    sendInvitation({ profileId, message }) {
+        const queryParams = {
+            action: 'verifyQuotaAndCreate',
+            decorationId: 'com.linkedin.voyager.dash.deco.relationships.InvitationCreationResultWithInvitee-2',
         };
-        return this.request.post('growth/normInvitations', requestPayload);
+        const requestPayload = {
+            ...(message && {
+                customMessage: message,
+            }),
+            inviteeProfileUrn: `urn:li:fsd_profile:${profileId}`,
+        };
+        return this.request.post('voyagerRelationshipsDashMemberRelationships', requestPayload, {
+            params: queryParams,
+        });
     }
     getReceivedInvitations({ skip = 0, limit = 100 } = {}) {
         const queryParams = {
