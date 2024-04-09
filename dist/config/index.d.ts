@@ -1,7 +1,7 @@
 export declare const linkedinApiUrl = "https://www.linkedin.com/voyager/api/";
 export declare const authUrl = "https://www.linkedin.com/uas/authenticate";
 export declare const authHeaders: {
-    'user-agent': string;
+    "User-Agent": string;
     'accept-encoding': string;
     Accept: string;
     Connection: string;

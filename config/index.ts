@@ -3,11 +3,11 @@ export const linkedinApiUrl = 'https://www.linkedin.com/voyager/api/';
 export const authUrl = 'https://www.linkedin.com/uas/authenticate';
 
 export const authHeaders = {
-  'user-agent': 'LinkedIn/8.8.1 CFNetwork/711.3.18 Darwin/14.0.0',
+  "User-Agent": "ANDROID OS",
   'accept-encoding': 'gzip, deflate',
   Accept: '*/*',
   Connection: 'keep-alive',
-  'X-Li-User-Agent': 'LIAuthLibrary:3.2.4 com.linkedin.LinkedIn:8.8.1 iPhone:8.3',
+  'X-Li-User-Agent': 'LIAuthLibrary:0.0.3 com.linkedin.android:4.1.881 Asus_ASUS_Z01QD:android_9',
   'X-User-Language': 'en',
   'X-User-Locale': 'en_US',
   'Accept-Language': 'en-us',

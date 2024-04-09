@@ -257,327 +257,327 @@
         "affectsGlobalScope": true
       },
       "../src/entities/linkedin-vector-artifact.entity.ts": {
-        "version": "492ffa6d1a7d2bd17c3f5b923c7e568c9b92af499b548d6040af6562e6d3a51d",
+        "version": "e112a169ece35905ac57414715f37ba20612d8ec4e79a583d8dc05f4148dd6fa",
         "signature": "9cecfebf24e2e426969bb77e6aaa32f12de41fc47c6a1e7ae544200be97be5d8",
         "affectsGlobalScope": false
       },
       "../src/entities/linkedin-vector-image.entity.ts": {
-        "version": "ad6dac1761b6fcb69733b874f2e282a41bb1d4b449745790174cf42453b14bc9",
+        "version": "2224da4e25548543d71780b3a8b569b9c796d39225569628d8ead1fda8865847",
         "signature": "b860f39a5ea6bac4b79a0bc71e20849723271e8e6137f7c74acf7aa124458f8e",
         "affectsGlobalScope": false
       },
       "../src/entities/linkedin-mini-profile.entity.ts": {
-        "version": "8b46507371976a8c8ecc830d8027bebeca56236026a98a3f1bb348d68db491a5",
+        "version": "94acfaa02cd5805a9286f631fa62ccc1edee7622fecfb478d0e48ffc639e8046",
         "signature": "6deee9730fef11a782ad7ecdf0b8f5d75d151bf2715de851e7027d946a933a15",
         "affectsGlobalScope": false
       },
       "../src/entities/linkedin-conversation.entity.ts": {
-        "version": "5e41606c2a4baba76a9d4528260637ea57d89ff43e0ac727c2e4516faf483242",
+        "version": "3ead6814241de3de58d32c6846871d8148e5f3e0f451c1741d0c3dc9b002d0b4",
         "signature": "2fbbfab5caa0ad09eb047b4e3f8d4fb6cd484b96fa417e12cbc11d55fd730fe0",
         "affectsGlobalScope": false
       },
       "../src/entities/mini-profile.entity.ts": {
-        "version": "efeaaac87b2ec940dfe8cee225274cfecf49a8c8322bd16895ecf28eb0420552",
+        "version": "5b19a0c71fa41d9c4b2b1bf8120b6583472c681aaeb3a9190751c2aa412edbda",
         "signature": "0558e08e18217cb704a67e2f51bc83ee35c1ee56dd165c43d3e6d4b5ae31279f",
         "affectsGlobalScope": false
       },
       "../src/entities/conversation.entity.ts": {
-        "version": "6eb4ab7368b8f877b8ffab5bcfffefe05f9918c908b9dd3fb70635e7dc07a07d",
+        "version": "e2a5c7cba3c97ec47c385367aa14b59a48f45a5233e3e5d7681ca3bd9d30c4ea",
         "signature": "bc57ba5e6f2caf7cb65c1cf0d11b929e26b12f334f87ae525b6dc84b0f755e41",
         "affectsGlobalScope": false
       },
       "../src/entities/linkedin-collection-response.entity.ts": {
-        "version": "7e5ef20defb6729782c1a219e94e80b52a94972aeeff199a613b94961f3409a0",
+        "version": "ff8fd09296a8ca5715bd795ef4a0c9a5568628bf2d18048ae4fca04f03c90546",
         "signature": "a3b9affc5cd0313bd0e8b4b3ea6957d28a120688170d2640bad95b703b046c60",
         "affectsGlobalScope": false
       },
       "../src/responses/conversations.response.get.ts": {
-        "version": "9270ef1c2559560858315e82c32195ddff260a26f3e02a77789e3a801570ba88",
+        "version": "284eb87a3f20c4e0e43765487f561895c95f0df1a55e39c1bec28190d8c5da5a",
         "signature": "70ce2e2a6e0775c2348e85239900b2eda804e9976c096e483984baeb49de792f",
         "affectsGlobalScope": false
       },
       "../src/entities/linkedin-image-attribute.entity.ts": {
-        "version": "2615a6c34d080ff7ef947106e74945161fc6ed7cc03070ba5bd2dbe37bfc5683",
+        "version": "399c625cfa0eef4662f84bae6d4ad92dd6526f34e0b07a624b9ad24cecf24e1b",
         "signature": "1dfb67e309154a224eb62f150d575c4872a319b650da7c241f54cd2c61bcc767",
         "affectsGlobalScope": false
       },
       "../src/entities/linkedin-image-view-model.entity.ts": {
-        "version": "fabdf9231c75083a49761a21dcc7db9a9dda496c0adaa4fb2264a8a057320679",
+        "version": "3da40855e870a9bc86c61f7ccf656391e6ec5da23a66b3511a7d09e36890e4ef",
         "signature": "f81a4b9f75d059b92e716829e816b07438f3f9220a901bc8110e45fe20b4089c",
         "affectsGlobalScope": false
       },
       "../src/entities/linkedin-text-view-model.entity.ts": {
-        "version": "5d0dff22a7085ef9c08af1254cf4450600c722c5200a363344dc77f2b1033fc9",
+        "version": "e0b691c929f771b9b9ca1598d446ae9fd79445a43ee29d1e2fea0794f58f18f5",
         "signature": "72bbbe7416f8823cf2ded30d472922eb571c9d1a70ecbde02c28852e9ff85238",
         "affectsGlobalScope": false
       },
       "../src/entities/linkedin-search-hit-v2.entity.ts": {
-        "version": "5e0c3e1cf5ac84b169b3eadd635ac2f18cf326262738e1918ef86b8469acfe12",
+        "version": "054fcfae061466786f0b773144264a0a074a293dd2736960159ae6cae35fd077",
         "signature": "4dc4436c323de564aed5bbc12c764d1b9d4301293e5a84bc9ce65f2da088a64e",
         "affectsGlobalScope": false
       },
       "../src/entities/linkedin-mini-company.entity.ts": {
-        "version": "5c01c4f69e9580e4df70139b4b01f58feed22d351f212caca9c31896a096fcbd",
+        "version": "d8f98b4cab2e60336aa65c0cdd3fd04055fdc7015b086b3391ba17bc07f12b9e",
         "signature": "593e38b21f7ff27856d51f48682b6d64ec94496be904b193c576188600d1564a",
         "affectsGlobalScope": false
       },
       "../src/entities/mini-company.entity.ts": {
-        "version": "82c5a6e48ec815e24da5b1c44577af461e088a695ce7f1ad186bf9101f596f52",
+        "version": "0150908177812df97a3cd5b309a0f5a18a19d1e9818f173857f2df6695b10a27",
         "signature": "6f67f3586ff78697d5e12362847719fbd1ad2d1a1b2e8e95ecb6fdf24f1a0c6e",
         "affectsGlobalScope": false
       },
       "../src/entities/company-search-hit.entity.ts": {
-        "version": "cca4bb4792ddf8f0705fcc1c67ff6d4ee023292e54f6b3fed438d2c7e38f7105",
+        "version": "2e5105ea4f143173166711c703606a050efa68be63f853d5af3ee268ede7f2cc",
         "signature": "ad7b1d98b7e49207611bd1fe6f9d7bc8b46884be5803e447274bb25d0b0de2d4",
         "affectsGlobalScope": false
       },
       "../src/entities/linkedin-invitation.entity.ts": {
-        "version": "6a8bc157fe9b35629eb40081ec130a8d2a256bcaf88dffbe458d9a1bd9c0da03",
+        "version": "92c8883780a305bc83b52c29da9e8d6740f67313c8bb5a71b9bd58df4b7d9305",
         "signature": "9297ae16b26557e89a7bdd53c1863b001415492f8ff0729933d29f47b3356064",
         "affectsGlobalScope": false
       },
       "../src/entities/invitation.entity.ts": {
-        "version": "f6e49fe86171b4f7746b3bdd94dc263dac57dc125ee37d72fce90fbcb10a640c",
+        "version": "6b14432a29882fd026cb3a4cebd2269b98c8613b016b9803c60550c23d93818b",
         "signature": "b2c905b5b322ae4f1f9dba1051c975f2f9fd001d7393037735b77186c88cbeb0",
         "affectsGlobalScope": false
       },
       "../src/entities/linkedin-attribute-text.entity.ts": {
-        "version": "3fac7b9a6bd251e1d95d5415d2df966fb95b0aa65738f070bb87b8043eaa4a94",
+        "version": "b1eb0dbb5dc88fa4739b55e4782cccab54de0c111abeb23ba5e069f6069edf22",
         "signature": "9c9823fa97593a8cfc2d9c9d28a8b6164505633229719af0da5641834d958daa",
         "affectsGlobalScope": false
       },
       "../src/entities/linkedin-company.entity.ts": {
-        "version": "4607c1d308fa7e2507291ba054e1f47a1f23a880e8a4ea9b508723f56b90290f",
+        "version": "ca14611099c5e82e032a6622f19d9f903f677fd158ba0bcf2c0b988abc16de77",
         "signature": "2c209e30e9cb098543c7c979bab40ec0af56e0537a5235f4757f97cf43a17d14",
         "affectsGlobalScope": false
       },
       "../src/entities/linkedin-event-create-response.ts": {
-        "version": "dcc9b956cefe99b2ceb534ea21d0ed9966c4f47a08dde531755a2a7259cc85a3",
+        "version": "17a853bebf62cb8904a4be9e3c0228b808cd91cb70b5ffe427fe443951bf206a",
         "signature": "cd24b5a4c1d580e521b2539f0929888247d9c1ff138ff50805b951419a6d2076",
         "affectsGlobalScope": false
       },
       "../src/entities/linkedin-event.entity.ts": {
-        "version": "f81e809b799f7977232a1a15d6f735443b3f8be81ad402f28401099122580ee6",
+        "version": "830080f386274530a002723ed4fab705a544964b099de263cb87d99baff8a89d",
         "signature": "8a97ffd51b789e865b2978cdbf9970cf6ff3d0e935c6c8e5a3e3b3c24231159c",
         "affectsGlobalScope": false
       },
       "../src/entities/linkedin-message.entity.ts": {
-        "version": "23e7a5c6937a1b444d549cd8d51a5b0ade714f0b356bc4e657c10c36fc4addbd",
+        "version": "75d09bc7b63458ae3bbf8a6b7a1a95cc86a565e26ad9dbe7052c3c67832d8ff4",
         "signature": "6fab5ef3e2783aa2f133128799e64ba4ceb742cd8f7810346fac5e39e913826f",
         "affectsGlobalScope": false
       },
       "../src/entities/linkedin-quick-replay-recommendation.entity.ts": {
-        "version": "ff1e4fefebdd2e0edc5985ca598ed2d8d06a7fc85b57af0a2205161d8541c798",
+        "version": "f3be735adca01757112f19d670f4155fe78ad5a1a4910b91c90695e9a1914b0c",
         "signature": "acb02254d028b0b9adbc1d18d60fe61e917e708023595a376c2d3d1de99acd1f",
         "affectsGlobalScope": false
       },
       "../src/entities/linkedin-message-event.entity.ts": {
-        "version": "91d60592061e95fc51af781f4d394283f55f7c7a14eb6986364cae447ac0b213",
+        "version": "452d05e2d68c3b400566e5510e160a3bc50053d4464f69abaa90dce874044092",
         "signature": "413bd164a6f6c88480ff583dbf20c0864ee9206db55a237f271948de85ccd4b3",
         "affectsGlobalScope": false
       },
       "../src/types/country-code.enum.ts": {
-        "version": "4de8a78f9b43708781fd448413c66d8eee7388ae8fcd02fc86f1f0bb65412ebe",
+        "version": "853a0ef0d17564a55db0849659d474f0a32fb403209aedc61b738f1a6c42c275",
         "signature": "104c476e4a7612ce0bbab2776484153025d1e9bd568ec29251f319cd0b8e01e8",
         "affectsGlobalScope": false
       },
       "../src/entities/linkedin-profile.entity.ts": {
-        "version": "72f76ef1f652d8f40f202f71fce6309ac31f54ec94fc247330bdfbbff4cac6b4",
+        "version": "efa7c039737331cc91e4a6f940c3067616230962ea6df1eae12e27692fb66c50",
         "signature": "a82c6d1817f84e2aca672081f466095c69a7b00830b42ba97819697e55fda6a4",
         "affectsGlobalScope": false
       },
       "../src/types/search-result-type.enum.ts": {
-        "version": "8d275b3b19a965336428ff6a74a35dc222e2f89dac038c9b96b46f899e07bfa3",
+        "version": "40216af991e724bc81230527ca2390c9ae96cf938b13bf3fa1a09b114f1d3889",
         "signature": "dece901f3d25c38fa1c66f95c7cb0658f74d6eaab75aa3ed12d4742ec2abe56b",
         "affectsGlobalScope": false
       },
       "../src/entities/linkedin-search-cluster.entity.ts": {
-        "version": "2a45b18a3d6c461528014db7e0597c000201b1b2da5235f398f801d1e1f1251a",
+        "version": "5115dc87efe063d7cd2b5784d6bbcc8ebc3340d209a763fca3e9dd915cb890a9",
         "signature": "efe598d4c6f712b83d4d5c5a613389e0cd6a911246f2f526f665e2215187e00e",
         "affectsGlobalScope": false
       },
       "../src/entities/message-create-response.entity.ts": {
-        "version": "12bed6bd328f23981424edb4cf7f6fc1e73e9d3716ab8c69293444dbf07907db",
+        "version": "51c3f8e838ddf0ab8607464e796640f311455b31fb063e8dbb6af3f7538dc950",
         "signature": "6c2ea7ce9868bc534a39ccc1f9d94bd9a045eff1dcd2d8d8424860fab970b1a9",
         "affectsGlobalScope": false
       },
       "../src/entities/message-event.entity.ts": {
-        "version": "dcb7256f21e08ca80dbc4cb48e46f8240fdb51f1b191492a908c4c61f62a9bad",
+        "version": "511ef90cfe333081cd5aed02dbd3c98679b8ad7f920671b493eada12b14572fb",
         "signature": "e12981e55ba049b839973335ffdc5f8cf2c59ae951bdd514938da8783738b877",
         "affectsGlobalScope": false
       },
       "../src/entities/people-search-hit.entity.ts": {
-        "version": "d536086fd7cb505ffa341e6107419e6d3385327cd3a6b877af050e296588b09f",
+        "version": "a3a2836f70162f40d0bed65bfa5b998194470a713f7d90b7f078ff1abbfc6cfc",
         "signature": "4df1b44fdbd383c287e0f3e88f40e82eb6eeff6a61026bd4236475dc03bdb43d",
         "affectsGlobalScope": false
       },
       "../src/entities/profile.entity.ts": {
-        "version": "962df44ebe2a94255aa3b41861f5eb0502b2495adb75fae34d7613099d56cad4",
+        "version": "9590ca59a9bff972cfc728af0db2af1ab05141e879f3a0dbbe02bcd59004107f",
         "signature": "282840acd9a50b22183917eb91515b2b4cd9c2a93b4f02f4a1a09eff4e516b6f",
         "affectsGlobalScope": false
       },
       "../src/entities/linkedin-base-company.ts": {
-        "version": "2284002e48c2ef62bc7fde102107345f94afbaf1c27be94b8f4d7f84a5886556",
+        "version": "452a9afbb2c119be4055cf4ee2179feda6161a4f56dfea1fb186ce49039718c0",
         "signature": "962c53fa87c30f4398da3f3b640d013c8f2ac4180d57ecdbcf26bb5518cd8aa6",
         "affectsGlobalScope": false
       },
       "../src/entities/linkedin-job-posting.ts": {
-        "version": "1e634cd879b06334707af98a0fc191fdbb771b26dbcc795a575817e3f0f8b33e",
+        "version": "29fd50f75591d271545a7df2552741b01f51fe655b3ce35021e1f707a2540017",
         "signature": "bb747945447255ee35fdd09196ba8f3e3fa33c2469491f2280b5b323c8c6af5d",
         "affectsGlobalScope": false
       },
       "../src/entities/index.ts": {
-        "version": "25e04f5f04e0709911d5f07b9b22b722fd491f958a0c87b77d38ade5573d3624",
+        "version": "4c911acf84ae64c749c895236aca33051035e2ad625da839528c10ff998bd922",
         "signature": "4c911acf84ae64c749c895236aca33051035e2ad625da839528c10ff998bd922",
         "affectsGlobalScope": false
       },
       "../src/scrollers/created-before-scroller.ts": {
-        "version": "578acc694582cf6c3f46a96d06f17f567a1aef4c5f6922742003bc28e83bd0c0",
+        "version": "53298d2e9383005266abaa17dbdd22a9ccd677f0937b465754d493fea9292f46",
         "signature": "d2506bde71ef3063b91da92d28f62d112d8a7a4cbab0e4c9b250a1c4632d624f",
         "affectsGlobalScope": false
       },
       "../src/scrollers/conversation.scroller.ts": {
-        "version": "84e7c468b4f4184c4b83fa6a2d6ffd10fb8740ff72d181f542394e8fbf2f8625",
+        "version": "0535c5e37711282528fbaceaf4825a3b52d12d3a35230afa450e8fda18e0f948",
         "signature": "d152b97119347f12f9a733e7870dd1579537e785fbd99da22c4009382b6447ea",
         "affectsGlobalScope": false
       },
       "../src/repositories/profile.repository.ts": {
-        "version": "40c96d7f612aaa385c2d607be07c491280913e4602d1530bbe0bc3ebb555d421",
+        "version": "4a47a4a0af8090755e914de1fd715a03626ff6c1338bc2300e145623ab735d1e",
         "signature": "d303437263ca97bcfbe74863591d5a6a39bbdce16973c6db50c4387f47c087b6",
         "affectsGlobalScope": false
       },
       "../src/repositories/conversation.repository.ts": {
-        "version": "4308dc90c470a3a7fab30d85ec489504f3697aa45400d009a7b197f4fd24cec2",
+        "version": "056b894d64d62605c894f3c60497cce38b052151cde91772bc66006e77bce5c4",
         "signature": "0947685263c5f9a7d352ab6a42774723c5533ff2723243e9ca85faf10ba7b425",
         "affectsGlobalScope": false
       },
       "../src/responses/received-invitations.response.get.ts": {
-        "version": "1243f8221c2f3cb8bc6ca7122e8c94cc46928ed6873f8f06f8a76a8fd503a299",
+        "version": "c08c351a9840cd834934eb1a2ab96fbcbc07408c1ad8c3722f03c4642767c667",
         "signature": "6156fcb65995e8b8b57f8b2aa3efe56dd8957a7ecee8dffdb30f69a85ccd45b8",
         "affectsGlobalScope": false
       },
       "../src/responses/sent-invitations.response.get.ts": {
-        "version": "467950e0e0b293d71fd3d6251052266bde8f12d02ff09a8f49f9101cda8fec23",
+        "version": "4f445b8e2050f17761c195188348044f96589a9b86000330cf1fe115b8555c2f",
         "signature": "f7de64f9d19d66cf3752dd17b027108c642b2e73b8e387f21c180286bcc0c71f",
         "affectsGlobalScope": false
       },
       "../src/scrollers/skip-limit-scroller.ts": {
-        "version": "9c28a3fcf56975d7fd0e2f2824fc4cede2b9f02d15b146cc3f9d9368b7140564",
+        "version": "33e6eb011855ca1745a536f1999a300be25bcfdb4d477c54188de3485c51df8d",
         "signature": "bee235a4a7fa807db4367c1350e618254ccaee0a3091eb9e9f8aa32359055d9e",
         "affectsGlobalScope": false
       },
       "../src/scrollers/invitation.scroller.ts": {
-        "version": "045c54ee07999b2c2ba70805fc41c784065c808ad911ff24c2d2be6e808fdc71",
+        "version": "6e0121abf98aea61a8af129974fb21167e95d726648309a16ed09a3d64cbc1d4",
         "signature": "c6ae701b6bec7543d0e0fb91114b5288e0b319b88235dc7d9949aac579176cd0",
         "affectsGlobalScope": false
       },
       "../src/scrollers/message.scroller.ts": {
-        "version": "c9b83593406a05028a79e45776bd6ff68be0f95306bdd6d34178326d4ca1a5cc",
+        "version": "cfe9789c370260cd8945e67f19c07e7bc963dbf4d1df0ddf14d4937216ca07df",
         "signature": "83132c496b65c5634c2e2a9eab861d1d4ee705cbecf87b4c94156aaeda2663a8",
         "affectsGlobalScope": false
       },
       "../src/types/contract-interest.enum.ts": {
-        "version": "9e6aaad548bbf2381bd94ba7270d781ec92f1157baf5a7d0fdde63f2cdbfa33d",
+        "version": "37c2a86d6b8f860d6278902c0a6a0350804bd86310adf0a5234f4a30189966bc",
         "signature": "4f54cad43b0b39e354747f305139ebe0ec2a97666db4263d843e053335c87d3b",
         "affectsGlobalScope": false
       },
       "../src/types/language-code.enum.ts": {
-        "version": "85a5f54d2b120d32598113502e2702a9ac75588a7cd8f9cce53561dcd4a5b8ee",
+        "version": "ee90ac9210ecaefe4db1ed5dd5c4025b1b10cfd761982d23be7a510d356d9c03",
         "signature": "24fb1aad5681da895aab4bd734fc49e57254ec6c6853ed2d0b84c3ae02c92453",
         "affectsGlobalScope": false
       },
       "../src/types/network.enum.ts": {
-        "version": "86a754b65225f51c39144555187776720c176ec114cef2d36d658106b3d5d46d",
+        "version": "de02f37255fce34146a69119673b10a5c0f94ec59a63336ba7ac3c4201693f47",
         "signature": "a7ffa3948e6726392c297ef89a1753de4a4732201a83d6dc8285601af41f4332",
         "affectsGlobalScope": false
       },
       "../src/types/people-search-filters.ts": {
-        "version": "ee5a4328a44b6ab4304811edd5f168d9c225c3b839251d48e6a4c8584ccf1650",
+        "version": "ce63e3fe1231e0797a6e00a4c2edc1078aa85d32fc9c9ea702801c753b05b0e2",
         "signature": "f54087315eaab4f8d24c6dac018a691aed0799697b39becb9a1df09cd7dac0cd",
         "affectsGlobalScope": false
       },
       "../src/scrollers/people-search.scroller.ts": {
-        "version": "e14e1e1c6ad437fefc00b9194599cf31903035d57c557f3d56c30d22cc0fa3c8",
+        "version": "d7fdda215ac6d8f8c891bde96473e44ae18558d562910f99f7ce8473a839a5bf",
         "signature": "701493c58b83b09134ed02a3db03139e3c06e76c187cbc4fd2c950825b31c1f4",
         "affectsGlobalScope": false
       },
       "../src/entities/linkedin-job-search-hit-entity.ts": {
-        "version": "f2fc9b1875c00e844771941e85c1eba9fd27775744cd7f6efee07ce718d9a83f",
+        "version": "795e7ad9c63d29ffab2e3ce9a5fa3656036a8b6a2eff9ec7d925ce9f80977473",
         "signature": "e8bc0046b62b17ccf946bce8eae11371f334cb964d1e6a61f84dc5c1887aee1b",
         "affectsGlobalScope": false
       },
       "../src/entities/linkedin-search-hit-entity.ts": {
-        "version": "bfb663a51cd7bda095f7c00219ebe98b8c8fdfc2bfdd335a8adbfe834a601069",
+        "version": "48c240e91394a400a3560f8f17000b55799f9941651d2b5d7c44b843012d03a2",
         "signature": "634e241c0e64f0fc6647c39d09ffcce976611ca016461ee426c4b83a4475753c",
         "affectsGlobalScope": false
       },
       "../src/entities/job-search-hit.entity.ts": {
-        "version": "f63c72067b6b5625b438fac5c004507ee56a4298add671edb37862fede5f5819",
+        "version": "63c2710bfc1461298efb4647aa7e382961a84771fac356aeaf626fdae6ca5abb",
         "signature": "cc73a7079691f2894610cb56101437b9660332cd09290f333b7555f6101d2785",
         "affectsGlobalScope": false
       },
       "../src/types/experience.enum.ts": {
-        "version": "f98053b6f7b8c5fc9b2b287e3e1a586899f1e10005a380311531747222c03aff",
+        "version": "1bbe7e3385856263a257dc01200cb1829eac90ef8a0b36c7c838b30a0fbc0036",
         "signature": "0b1bc8ba1ba1754e149f244b55d86780ea77637163213dd74ff8a8621dc81df6",
         "affectsGlobalScope": false
       },
       "../src/types/job-type.enum.ts": {
-        "version": "202878c1fce6c25ca66a6aca1ef80ac76d3dbbb3824b6d659e4b8ac3c0d8ed70",
+        "version": "f05017e5a69b557e5dd961bdbe4eda4745ed7bf6dac686359ebf62ee272e9b47",
         "signature": "49844f4e50b638de24e94dc11a7d0061817433bc5856cd26055967b13d697ab6",
         "affectsGlobalScope": false
       },
       "../src/types/job-search-filters.ts": {
-        "version": "749cd5e8a3c97a21d520da7b94bc69d788197ed35cfd13566b3c2f5b45061a33",
+        "version": "df0ca117d5d8e60ac9a0542d5e6c9951e190ddc3ae2a79e795b94c48e9de3e27",
         "signature": "ef0607058a1a1e2ca71ff970b6ad8454d9a54623b250945e0bec2b45ed6c6243",
         "affectsGlobalScope": false
       },
       "../src/scrollers/job-search.scroller.ts": {
-        "version": "69117e7b0b89f6ba227c8bdec8ff3ab0cb54440059880c68c5865fb27fc80a3a",
+        "version": "95c3b6be90e1b7e3176ce43e1ba96dccd9d5cc99edb7e22348cc4a3ba579914f",
         "signature": "b7072ec397c5dc9441585ac1d8e6a4c348d24b87a0a4204da21bd575f6a40d3e",
         "affectsGlobalScope": false
       },
       "../src/scrollers/index.ts": {
-        "version": "00a869fb712b03471b7ed7c9bb9f6f68928b6b4ed89def45f1e02c65ffe0cd36",
+        "version": "248fdf21b55478ba1e405393694d421eab51029195ddf8c2f46dda7e32025c64",
         "signature": "248fdf21b55478ba1e405393694d421eab51029195ddf8c2f46dda7e32025c64",
         "affectsGlobalScope": false
       },
       "../src/repositories/invitation.repository.ts": {
-        "version": "a9b1421bc319aaa17eb337648dc13186caae82354a2e8a23d9cc49487a67efe5",
+        "version": "68b33c65b97878960d6a0d028ec746611de82b079446b3db440aeeb6c799a207",
         "signature": "49e0fd449869e82da1e3d52bc60aa45720e1bb5f2378017f2a1f78b241ab9723",
         "affectsGlobalScope": false
       },
       "../src/responses/messages.response.get.ts": {
-        "version": "59a0f3e693c05b23962f92850544ee933e7f488148aca0aaa8b8e99daa618b6c",
+        "version": "728d77809a602695e770b3d14010f03138ec8ab631e60ea8450d466bfaae0939",
         "signature": "15854067811d25e37282c231c1237b281aa46b228dfdcfa80426d4f0150d3253",
         "affectsGlobalScope": false
       },
       "../src/repositories/message.repository.ts": {
-        "version": "2cdef80427e2211333073a841d3dd52c71f2817db97598eeb77b2a3866339fca",
+        "version": "e95b31578ad6c7e84c1682d3579683f5dba5d12c20b5de461b31bb2d95541e5f",
         "signature": "fededc15fa7e31134ccb57d9e2929dfc23fda1572cbb3f072dd98879fa9901e5",
         "affectsGlobalScope": false
       },
       "../src/responses/blended-search.reponse.get.ts": {
-        "version": "7adb19ff899b1861643f3bb4a3dc7748ce45f5bb75b24275a34f77a7d3c6a3ec",
+        "version": "948a4566fdb3d322f8d025157735ab39ca035a8911bdf3ac42449002d770c771",
         "signature": "bcf13820a3f374bcb9e081e3a55a956ea49eebf040b7e04b9ef357964890e458",
         "affectsGlobalScope": false
       },
       "../src/scrollers/company-search.scroller.ts": {
-        "version": "2bafeab42222c2c7ea0d8060dd0d68807a23291610aacacc24fce9e2c296b6fc",
+        "version": "043eafab8ab74ad7cbb4382c92753c23b5b59fc39cc926f96a1624b8f6ff9aea",
         "signature": "e0bdf9b89b79b7eb7b82ee842d4c6c9764248e179b65a503e1e4eb5f82dc194d",
         "affectsGlobalScope": false
       },
       "../src/types/search-type.enum.ts": {
-        "version": "6792f2177498fa1dec845278c7aadd5b16b140ed98f35090c5a4b0cfcdcbafea",
+        "version": "d49fafbefce69b40c17f52777717dbf2e414ccc8d5c952ba4f42a0697c660404",
         "signature": "46dee36b2389873552667bf0a4cb34eb5b6486b2c57cb297e385445c1cdfcd9c",
         "affectsGlobalScope": false
       },
       "../src/repositories/search.repository.ts": {
-        "version": "27f52d0e5dc83fe8dc3944297b0ddead4cb2f1ff0cf67dfb7570d5ff3f653da9",
+        "version": "f25eef816ea2297e480b19c081fef1dc5c6e1f7f17e67c792c4ce3e41e8ca767",
         "signature": "b112975aa81dce49bf6cfa79c8a96849112e912235eca4004e3da2bd37166d30",
         "affectsGlobalScope": false
       },
       "../src/repositories/index.ts": {
-        "version": "ec2a36d22c0059b912edbc1a1e98eaed5581e880fe1652ef27a125636dccfd0f",
+        "version": "3e67a09e2143ab2069af0e01bd571c22fcd90142c6f5106788743e4084cd346f",
         "signature": "3e67a09e2143ab2069af0e01bd571c22fcd90142c6f5106788743e4084cd346f",
         "affectsGlobalScope": false
       },
@@ -597,82 +597,82 @@
         "affectsGlobalScope": false
       },
       "../config/index.ts": {
-        "version": "5e13e83d536ae0f2e1f5ceaa8f72a16978a987318b8b4130be17d2d8568c83dc",
-        "signature": "b1dad8b8110ddf065035712e841c96c67264c4152033ef74cb14b23705cddfca",
+        "version": "4dd4ec9a332ba9973589a7361ad52c3e31ff84a1f66bfacb8c50538f88a62297",
+        "signature": "83c021a02e26c5c58a762fbe6e91d397f9252f2b88b7a0435c7c23f81d683bd0",
         "affectsGlobalScope": false
       },
       "../src/requests/auth.request.ts": {
-        "version": "80b15feed8251e5986811612af39eac535b4a3ebe5e78d54a351b3bf11c36ac0",
+        "version": "9b351480c0d563c0eae1880c6a1273dc4a589b983400d086cdf79247e00f987c",
         "signature": "61961f424025d881e473e10e23f56a73056ddfc5472a4882304df6650d98e303",
         "affectsGlobalScope": false
       },
       "../src/responses/conversation.response.get.ts": {
-        "version": "1aaee187054e55f64c8ab254d6370ad1cdfc157bf3a02181434adb74497feb2c",
+        "version": "e161706b9d641eab903cb62c5c4623e7bdb8e9b0b8c4c81f8ecdf4fd231fad6c",
         "signature": "c3de78b7aeeed3c4d279d15a75a96eee3f5962eff3f570791d6a617a6745c155",
         "affectsGlobalScope": false
       },
       "../src/requests/conversation.request.ts": {
-        "version": "44243835d7a61f00f764ea09d0fdaa56a607a52a4875f0e975feed96df972679",
+        "version": "a74e8292f6dff2a319602dafbe8f8b25305bc1b04db6b2560c7d6abab594f0fd",
         "signature": "75566431bfc987cac318fe045ef31782a279b3707c4ec3797748a132dafc0307",
         "affectsGlobalScope": false
       },
       "../src/requests/invitation.request.ts": {
-        "version": "25a1eee3a1d858ecebfa11eaf5d6fbe767f244576a504c05643ccc6b39852da4",
+        "version": "21d889e2e39d4f44e88ef4af00e0f52b87aac025f4f3cc2910d1e6d1ab09dafe",
         "signature": "b2a30052cc61c49cf87fe97210f4c1543c20f618b137c22790931b46e0df4124",
         "affectsGlobalScope": false
       },
       "../src/responses/message.response.post.ts": {
-        "version": "a47b9e2ce74edc3de1397d7d98c23fa25d4e1f1e03331f9cc9203c013986b123",
+        "version": "5a6345ce36ac2894e915eb570b2adeb8cf2fd906267ff3afc9ff34e3b4eafde5",
         "signature": "e6943573bcb1c1674668e789c5a5b87a23c231e429921d860df0d494c0e4c832",
         "affectsGlobalScope": false
       },
       "../src/requests/message.request.ts": {
-        "version": "7731b4e4d6d739e83b5fb739bffe726851d39c2a0ffcf2155ec06a2548486074",
+        "version": "8dfdaebf1ea25d5f81dd3aa2ed07cb12c76cdef4b8b91cad9bee493c53723782",
         "signature": "9f99abab353e66311ae75b307789f5ed8ebaf79b3be8e4b36e28bd2720010725",
         "affectsGlobalScope": false
       },
       "../src/responses/own-profile.response.get.ts": {
-        "version": "e245ff88b32c1e769938ad8e85df59da7277468164f6847ba92d124fe10cf330",
+        "version": "c1cbac89c8556ed16ad031dc8266320da85e44d95d2b0e4b5ad8724dac6100b6",
         "signature": "3e67ba739de8c688e206fafa0114deb96f7cf781dd237edaa43b0ffd5540fdd1",
         "affectsGlobalScope": false
       },
       "../src/responses/profile.response.get.ts": {
-        "version": "043acd4e9bcf59fb990f328aff7929d3c0281e0073df27c24ae2a3234c0e1a97",
+        "version": "6c96ff8d03bf3d68c0a21c2fc29ab09056604a34c4c50cc92b02385766a65341",
         "signature": "2252968fd5c38c1be775cdc432f2711be2d68ef5e1c63eb3b04e00fbf9906a52",
         "affectsGlobalScope": false
       },
       "../src/requests/profile.request.ts": {
-        "version": "059fc5d6af7fda35810f5a4820967915778577b9617a1286b29cbe3a5a3e3617",
+        "version": "bf4e5f29d42884ba809e704b5a01f4301de64ff5623de4085ebc038883a945a8",
         "signature": "6526b20dd9bd983be5276efe71895dfbbc091b2e95b9edecc43af3c6a1a270bb",
         "affectsGlobalScope": false
       },
       "../src/responses/jobs-search.reponse.get.ts": {
-        "version": "f3795711e9d0661d8b158983655f9a1b4a97011785aea6d85ad028776edb7551",
+        "version": "4378fc6b18923ac84aa8220bdcb3cf7aba83c908a3760fa9db388dd4ce4a6098",
         "signature": "d42debdf920f60ac5f041ac96f5d7c423e82f6cc61d268cd9c72049428e16fa5",
         "affectsGlobalScope": false
       },
       "../src/types/blended-search-filters.ts": {
-        "version": "a2f1b07e2fda528b7a1ada8abf33f40bd6e071239795931dc6abd6aaca502349",
+        "version": "763e5e22a2de69b46a69c2cbbd7e6a41d1013d93cc5c0f35c51796913e0cf14e",
         "signature": "91e480e2c71feb2f8304c0cb25e8a4aa2b16575eb96549fee34055bd21a79b92",
         "affectsGlobalScope": false
       },
       "../src/requests/search.request.ts": {
-        "version": "efb257d662c084fac91cf26ef3e2c108493a2ab709214632441163c72d1acef5",
+        "version": "a3a7044b54a63a473b2e6dc2ef52f0e6e70a6907eeacf00034314705e00aa184",
         "signature": "d9f4dea078ca465934498cccdae85885426566c7c388ca782e668fd73bc1b142",
         "affectsGlobalScope": false
       },
       "../src/utils/paramsserializer.ts": {
-        "version": "f82a944d8cff9cae3d8204e6d08fd9a27a62bd8434a9f60d48765585e0258044",
+        "version": "95fd832bcb09c145f5265f648e8a09fcbaee037ad8b5199af9856abf8f8c8fb1",
         "signature": "8aba3567ee860192432f4b9517e388e62f9c520c222aed8e9ac76f0bd8c850bc",
         "affectsGlobalScope": false
       },
       "../src/core/request.ts": {
-        "version": "7118d75b188e15362e71e517153ed5be5793733a12f4c2dcec998e72f6ef4b0e",
+        "version": "1eefa860e5cc25bec3eb99f9ec9ae7415cc164e9162c6c4b088b5c30ebeeb466",
         "signature": "69f37b2df22385285a195e447719bb7ddb7839f77ae91037e911205e082ccf3b",
         "affectsGlobalScope": false
       },
       "../src/core/linkedin-request.ts": {
-        "version": "dea9977e5dee0b894adecd87ef787941de420ef128a1a73d61db4b788db9ed77",
+        "version": "05312a3fd1bbcd2948ef5c5a41f7d2540f009ddb73821977c06f6253d4501bdd",
         "signature": "b6174090e556962eef3b11ac618387ebd8571ab06240e37ac26703c5a4abf120",
         "affectsGlobalScope": false
       },
@@ -682,47 +682,47 @@
         "affectsGlobalScope": false
       },
       "../src/types/anonymous-cookies.ts": {
-        "version": "be77bde976e6ba53dea60956037b61c528c66b16853b9745ea4335c61696f24e",
+        "version": "b8ea1cce7f248616137089809a5ddfdba99e25c400fa469122b1f594116297b5",
         "signature": "83447ba555c632a09f5fc490c01305cdc6ecb5d4c994a0b6a84507d98b18da70",
         "affectsGlobalScope": false
       },
       "../src/types/auth-cookies.ts": {
-        "version": "bb873eb130bec8cf71a83570ea447e224f2103c96525b067a4649b7a9800b608",
+        "version": "9e37dcc5f3cbcd94ec58b6070d9ca32dfe7349d1f0afcb76a7fe84cde94aa027",
         "signature": "d864279caeb9f18d6c79e0a03c7eb5847d315c673e95eb6fb70f3011f528f4e9",
         "affectsGlobalScope": false
       },
       "../src/core/login.ts": {
-        "version": "a409597bee5ab2656511c49ca9943a6b90e1c2e7b08c99432fc3bab5d1113a48",
+        "version": "04c8b055a8eca633e72332f2e8c309dcbe68323799a3c27bba43edc07130db9b",
         "signature": "54f595d21253cf0df9c4f2ccb96c373ae301bf76500e2811c0bb658030a59dbe",
         "affectsGlobalScope": false
       },
       "../src/core/client.ts": {
-        "version": "fbf42585f71dc40b222e335b996389465e26780d72c11a81644c05c72fdaf980",
+        "version": "7e2c077abe051bc34d3bf3677bc9509c349dd943d6777c544feb2542b9f83e4a",
         "signature": "58bea008d8848e393a93c3b9447526565aee3be88a7d55d677ede9f56ba0f069",
         "affectsGlobalScope": false
       },
       "../src/core/index.ts": {
-        "version": "a3fa4373171a3684e69fe2220ca3ab5caecce14d3bb929a1c1191cbb4e264c8c",
+        "version": "de0c56be8211e7c1cd3acf511d3c3449d78b17ec72648182169296efbbc50af9",
         "signature": "de0c56be8211e7c1cd3acf511d3c3449d78b17ec72648182169296efbbc50af9",
         "affectsGlobalScope": false
       },
       "../src/types/client.interface.ts": {
-        "version": "7b3a2909dc11a639104c7fc80195c46229ef1b028abaf5fd4eaeda2064323566",
+        "version": "dbb30389df0df51301bd717bdb8a8e9eef0671e8f4550f74e4f062bbdc294e89",
         "signature": "75192758699013d42f0becf51c76f8af093c22da62b9954487602cda1ae469f5",
         "affectsGlobalScope": false
       },
       "../src/types/index.ts": {
-        "version": "612749c45b42f00d2732e49dabc87193ccbc693441eb9b402edd0deb026bf79f",
+        "version": "265f74bbe0aebb200b0b1a7890506019d03da54d2fe0b338478cecd13ea48532",
         "signature": "265f74bbe0aebb200b0b1a7890506019d03da54d2fe0b338478cecd13ea48532",
         "affectsGlobalScope": false
       },
       "../src/responses/index.ts": {
-        "version": "76e62faab36729ff67a5395214e201e65fdf4e0f5874781dcaf24213718dce67",
+        "version": "779cb0eb34f211f0da52824af0b31d23b656cf0473bc6ddbaa7077dafc9b3994",
         "signature": "779cb0eb34f211f0da52824af0b31d23b656cf0473bc6ddbaa7077dafc9b3994",
         "affectsGlobalScope": false
       },
       "../src/index.ts": {
-        "version": "0fbca63dc307f175ac532edda3a11b6b4e444839e9638c409a94ff6aef3ab3ff",
+        "version": "d9b0f440dc041c88bf17a63cbeb3bff0b66a93f112631109225dbab29e6d764a",
         "signature": "d9b0f440dc041c88bf17a63cbeb3bff0b66a93f112631109225dbab29e6d764a",
         "affectsGlobalScope": false
       },
@@ -732,7 +732,7 @@
         "affectsGlobalScope": false
       },
       "../src/utils/index.ts": {
-        "version": "9da3c7545d8b4629c75243dc4e879cd304115593f47875ea57252ad2d866fff1",
+        "version": "b7dbecd30f12ffb30b58513a5b8f32ac0944f8a42b8fb1c3eaf3ce49973c9d76",
         "signature": "b7dbecd30f12ffb30b58513a5b8f32ac0944f8a42b8fb1c3eaf3ce49973c9d76",
         "affectsGlobalScope": false
       },

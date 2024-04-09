@@ -6,105 +6,105 @@
 
 ## Hierarchy
 
-- **LinkedInCompany**
+* **LinkedInCompany**
 
 ## Index
 
 ### Properties
 
-- [$anti_abuse_annotations](_src_entities_linkedin_company_entity_.linkedincompany.md#$anti_abuse_annotations)
-- [$recipeTypes](_src_entities_linkedin_company_entity_.linkedincompany.md#$recipetypes)
-- [$type](_src_entities_linkedin_company_entity_.linkedincompany.md#$type)
-- [entityUrn](_src_entities_linkedin_company_entity_.linkedincompany.md#entityurn)
-- [industry](_src_entities_linkedin_company_entity_.linkedincompany.md#industry)
-- [industryUrns](_src_entities_linkedin_company_entity_.linkedincompany.md#industryurns)
-- [logo](_src_entities_linkedin_company_entity_.linkedincompany.md#logo)
-- [name](_src_entities_linkedin_company_entity_.linkedincompany.md#name)
-- [universalName](_src_entities_linkedin_company_entity_.linkedincompany.md#universalname)
-- [url](_src_entities_linkedin_company_entity_.linkedincompany.md#url)
+* [$anti\_abuse\_annotations](_src_entities_linkedin_company_entity_.linkedincompany.md#$anti_abuse_annotations)
+* [$recipeTypes](_src_entities_linkedin_company_entity_.linkedincompany.md#$recipetypes)
+* [$type](_src_entities_linkedin_company_entity_.linkedincompany.md#$type)
+* [entityUrn](_src_entities_linkedin_company_entity_.linkedincompany.md#entityurn)
+* [industry](_src_entities_linkedin_company_entity_.linkedincompany.md#industry)
+* [industryUrns](_src_entities_linkedin_company_entity_.linkedincompany.md#industryurns)
+* [logo](_src_entities_linkedin_company_entity_.linkedincompany.md#logo)
+* [name](_src_entities_linkedin_company_entity_.linkedincompany.md#name)
+* [universalName](_src_entities_linkedin_company_entity_.linkedincompany.md#universalname)
+* [url](_src_entities_linkedin_company_entity_.linkedincompany.md#url)
 
 ## Properties
 
-### $anti_abuse_annotations
+### $anti\_abuse\_annotations
 
-• **$anti_abuse_annotations**: { attributeId: number ; entityId: number }[]
+•  **$anti\_abuse\_annotations**: { attributeId: number ; entityId: number  }[]
 
-_Defined in [src/entities/linkedin-company.entity.ts:7](https://github.com/eilonmore/linkedin-private-api/blob/84c9c15/src/entities/linkedin-company.entity.ts#L7)_
+*Defined in [src/entities/linkedin-company.entity.ts:28](https://github.com/dmitriy-qua/linkedin-private-api/blob/0548fcd/src/entities/linkedin-company.entity.ts#L28)*
 
----
+___
 
 ### $recipeTypes
 
-• **$recipeTypes**: string[]
+•  **$recipeTypes**: string[]
 
-_Defined in [src/entities/linkedin-company.entity.ts:11](https://github.com/eilonmore/linkedin-private-api/blob/84c9c15/src/entities/linkedin-company.entity.ts#L11)_
+*Defined in [src/entities/linkedin-company.entity.ts:32](https://github.com/dmitriy-qua/linkedin-private-api/blob/0548fcd/src/entities/linkedin-company.entity.ts#L32)*
 
----
+___
 
 ### $type
 
-• **$type**: _typeof_ [COMPANY_TYPE](../modules/_src_entities_linkedin_company_entity_.md#company_type)
+•  **$type**: *typeof* [COMPANY\_TYPE](../modules/_src_entities_linkedin_company_entity_.md#company_type)
 
-_Defined in [src/entities/linkedin-company.entity.ts:6](https://github.com/eilonmore/linkedin-private-api/blob/84c9c15/src/entities/linkedin-company.entity.ts#L6)_
+*Defined in [src/entities/linkedin-company.entity.ts:27](https://github.com/dmitriy-qua/linkedin-private-api/blob/0548fcd/src/entities/linkedin-company.entity.ts#L27)*
 
----
+___
 
 ### entityUrn
 
-• **entityUrn**: string
+•  **entityUrn**: string
 
-_Defined in [src/entities/linkedin-company.entity.ts:12](https://github.com/eilonmore/linkedin-private-api/blob/84c9c15/src/entities/linkedin-company.entity.ts#L12)_
+*Defined in [src/entities/linkedin-company.entity.ts:33](https://github.com/dmitriy-qua/linkedin-private-api/blob/0548fcd/src/entities/linkedin-company.entity.ts#L33)*
 
----
+___
 
 ### industry
 
-• **industry**: Record<string, string\>
+•  **industry**: Record<string, string\>
 
-_Defined in [src/entities/linkedin-company.entity.ts:13](https://github.com/eilonmore/linkedin-private-api/blob/84c9c15/src/entities/linkedin-company.entity.ts#L13)_
+*Defined in [src/entities/linkedin-company.entity.ts:34](https://github.com/dmitriy-qua/linkedin-private-api/blob/0548fcd/src/entities/linkedin-company.entity.ts#L34)*
 
----
+___
 
 ### industryUrns
 
-• **industryUrns**: string[]
+•  **industryUrns**: string[]
 
-_Defined in [src/entities/linkedin-company.entity.ts:14](https://github.com/eilonmore/linkedin-private-api/blob/84c9c15/src/entities/linkedin-company.entity.ts#L14)_
+*Defined in [src/entities/linkedin-company.entity.ts:35](https://github.com/dmitriy-qua/linkedin-private-api/blob/0548fcd/src/entities/linkedin-company.entity.ts#L35)*
 
----
+___
 
 ### logo
 
-• **logo**: { vetorImage: [LinkedInVectorImage](_src_entities_linkedin_vector_image_entity_.linkedinvectorimage.md) }
+•  **logo**: { vectorImage: [LinkedInVectorImage](_src_entities_linkedin_vector_image_entity_.linkedinvectorimage.md)  }
 
-_Defined in [src/entities/linkedin-company.entity.ts:15](https://github.com/eilonmore/linkedin-private-api/blob/84c9c15/src/entities/linkedin-company.entity.ts#L15)_
+*Defined in [src/entities/linkedin-company.entity.ts:36](https://github.com/dmitriy-qua/linkedin-private-api/blob/0548fcd/src/entities/linkedin-company.entity.ts#L36)*
 
 #### Type declaration:
 
-| Name         | Type                                                                                      |
-| ------------ | ----------------------------------------------------------------------------------------- |
-| `vetorImage` | [LinkedInVectorImage](_src_entities_linkedin_vector_image_entity_.linkedinvectorimage.md) |
+Name | Type |
+------ | ------ |
+`vectorImage` | [LinkedInVectorImage](_src_entities_linkedin_vector_image_entity_.linkedinvectorimage.md) |
 
----
+___
 
 ### name
 
-• **name**: string
+•  **name**: string
 
-_Defined in [src/entities/linkedin-company.entity.ts:18](https://github.com/eilonmore/linkedin-private-api/blob/84c9c15/src/entities/linkedin-company.entity.ts#L18)_
+*Defined in [src/entities/linkedin-company.entity.ts:39](https://github.com/dmitriy-qua/linkedin-private-api/blob/0548fcd/src/entities/linkedin-company.entity.ts#L39)*
 
----
+___
 
 ### universalName
 
-• **universalName**: string
+•  **universalName**: string
 
-_Defined in [src/entities/linkedin-company.entity.ts:19](https://github.com/eilonmore/linkedin-private-api/blob/84c9c15/src/entities/linkedin-company.entity.ts#L19)_
+*Defined in [src/entities/linkedin-company.entity.ts:40](https://github.com/dmitriy-qua/linkedin-private-api/blob/0548fcd/src/entities/linkedin-company.entity.ts#L40)*
 
----
+___
 
 ### url
 
-• **url**: string
+•  **url**: string
 
-_Defined in [src/entities/linkedin-company.entity.ts:20](https://github.com/eilonmore/linkedin-private-api/blob/84c9c15/src/entities/linkedin-company.entity.ts#L20)_
+*Defined in [src/entities/linkedin-company.entity.ts:41](https://github.com/dmitriy-qua/linkedin-private-api/blob/0548fcd/src/entities/linkedin-company.entity.ts#L41)*
